@@ -17,7 +17,7 @@
               </div>
             </div>
             <div class="col-md-12" style="text-align: right">
-              <a class="btn btn-primary" ng-click="vm.step = 'email'" ng-disabled="!vm.name">
+              <a class="btn btn-primary" ng-click="!vm.name || (vm.step = 'email')" ng-disabled="!vm.name">
                 Next
               </a>
             </div>
@@ -45,7 +45,7 @@
                 Previous
               </a>
 
-              <a class="btn btn-primary" ng-click="vm.step = 'message'" ng-disabled="!vm.email">
+              <a class="btn btn-primary" ng-click="!vm.email || (vm.step = 'message')" ng-disabled="!vm.email">
                 Next
               </a>
             </div>
@@ -69,7 +69,7 @@
                 Previous
               </a>
 
-              <a class="btn btn-primary" ng-click="vm.step = 'review'" ng-disabled="!vm.message">
+              <a class="btn btn-primary" ng-click="!vm.message || (vm.step = 'review')" ng-disabled="!vm.message">
                 Next
               </a>
             </div>
